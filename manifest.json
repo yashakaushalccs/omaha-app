@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "locale": "en_US.UTF-8",
+  "metadata": {
+    "appmode": "python-streamlit",
+    "entrypoint": "omaha_app.py"
+  },
+  "python": {
+    "version": "3.10.16",
+    "package_manager": {
+      "name": "pip",
+      "version": "24.3.1",
+      "package_file": "requirements.txt"
+    }
+  },
+  "files": {
+    "requirements.txt": {
+      "checksum": "83006faa311016bbc4e739cd96d8bc59"
+    },
+    ".env": {
+      "checksum": "84c7af6624f81b6d807376e11c430b41"
+    },
+    ".gitignore": {
+      "checksum": "1d9c608eaed27a8df218e1b727f5ecd5"
+    },
+    ".streamlit/config.toml": {
+      "checksum": "91a53ffc06f179a25594b4aa258c4366"
+    },
+    "README.md": {
+      "checksum": "8667b70595effe071dd40d100f92658b"
+    },
+    "ccs_images/.DS_Store": {
+      "checksum": "1c2e76ca6e78c00ce5bb0cc26159df5c"
+    },
+    "ccs_images/GDPR_logo.png": {
+      "checksum": "bc4e43558f307b29698bb3f2879e92dc"
+    },
+    "ccs_images/bgd1.jpg": {
+      "checksum": "372200d09d085a4c95f7f579b303a82f"
+    },
+    "ccs_images/bgd2.jpeg": {
+      "checksum": "19f6cf6a907075e89bdfd27b71777751"
+    },
+    "ccs_images/bgd3.jpg": {
+      "checksum": "af8fe8487187c31b19a6b1f6439ae799"
+    },
+    "ccs_images/bgd4.jpeg": {
+      "checksum": "743527b986e490367a758a2aadd191d2"
+    },
+    "ccs_images/img1.png": {
+      "checksum": "0f576d8c0d8c60af4bac7d590b247a2a"
+    },
+    "ccs_images/logo.jpg": {
+      "checksum": "1b9252fd6d32af114ba404f197118e58"
+    },
+    "ccs_images/logo1.png": {
+      "checksum": "cb06316636647cd334a4a886d8d8df11"
+    },
+    "ccs_images/logo2.png": {
+      "checksum": "e799e80cc88ce8c10e8fbfd1de8b23db"
+    },
+    "ccs_images/zoo.jpg": {
+      "checksum": "da46046957147081bff83432ae7cc472"
+    },
+    "omaha_app.py": {
+      "checksum": "722b0132fedf0e55a6824b5ee3342954"
+    }
+  }
+}
