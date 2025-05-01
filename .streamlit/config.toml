@@ -1,0 +1,6 @@
+[theme]
+base="light"
+primaryColor="#1E5631"              # Forest Green - used for buttons and accents
+backgroundColor="#FFFDF6"           # Soft off-white background (light natural tone)
+secondaryBackgroundColor="#EDE6DA"  # Light beige/brown for cards/sidebar
+textColor="#2F2F2F"                 # Dark gray for clean readability
