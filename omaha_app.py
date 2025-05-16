@@ -42,9 +42,7 @@ def read_docx(file_path):
     return text
 
 bd_list = [
-    "/Users/yashakaushal/Documents/app_testing/omaha_test/data/templates/CCS1/",
-    "/Users/yashakaushal/Documents/app_testing/omaha_test/data/templates/CCS2/",
-    "/Users/yashakaushal/Documents/app_testing/omaha_test/data/templates/CCS3/",
+    "templates/CCS1/"
 ]
 
 def get_relevant_templates(selected_type, selected_style, base_directory=bd_list[0]):
