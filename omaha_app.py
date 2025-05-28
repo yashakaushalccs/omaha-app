@@ -430,6 +430,7 @@ if st.session_state.current_index >= 0 and st.session_state.letters:
     with col1:
         if st.button("⬅️ Previous") and st.session_state.current_index > 0:
             st.session_state.current_index -= 1
+            st.rerun()
 
     with col2:
         if st.button("🔄 Refresh Letter"):
@@ -487,6 +488,7 @@ if st.session_state.current_index >= 0 and st.session_state.letters:
     with col3:
         if st.button("Next ➡️") and st.session_state.current_index < len(st.session_state.letters) - 1:
             st.session_state.current_index += 1
+            st.rerun()
 
     with col4:
         if st.button("🧹 Clear History"):
