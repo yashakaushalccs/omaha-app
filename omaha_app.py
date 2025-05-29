@@ -167,7 +167,7 @@ def prepare_letter_inputs_chain(input_dict):
         "Summer brings the zoo to life with longer days, lively animal activity, and joyful visits from families and children" if summer else "",
         "Spring awakens the zoo with blooming gardens, playful newborn animals, and a renewed sense of energy throughout the park" if spring else "",
         "Fall transforms the zoo with crisp air, colorful foliage, and animals preparing for the changing season." if fall else "",
-        "Winter brings a quiet beauty to the zoo, with peaceful landscapes and animals adapting to the colder months in unique and fascinating ways."
+        "Winter brings a quiet beauty to the zoo, with peaceful landscapes and animals adapting to the colder months in unique and fascinating ways." if winter else ""
     ]
 
     return {
@@ -463,7 +463,7 @@ if st.session_state.current_index >= 0 and st.session_state.letters:
                         "Summer brings the zoo to life with longer days, lively animal activity, and joyful visits from families and children" if summer else "",
                         "Spring awakens the zoo with blooming gardens, playful newborn animals, and a renewed sense of energy throughout the park" if spring else "",
                         "Fall transforms the zoo with crisp air, colorful foliage, and animals preparing for the changing season." if fall else "",
-                        "Winter brings a quiet beauty to the zoo, with peaceful landscapes and animals adapting to the colder months in unique and fascinating ways."
+                        "Winter brings a quiet beauty to the zoo, with peaceful landscapes and animals adapting to the colder months in unique and fascinating ways." if winter else ""
                     ]).strip() or "No additional information."
                 }
 
@@ -530,7 +530,7 @@ if st.session_state.current_index >= 0 and st.session_state.letters:
 
 
 
-# Powered BY + LOGO
+# Powered BY CCS LOGO
 
 logo_base64 = get_base64_of_image("ccs_images/logo2.png")
 
