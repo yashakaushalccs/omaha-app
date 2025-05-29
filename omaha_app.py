@@ -527,3 +527,40 @@ if st.session_state.current_index >= 0 and st.session_state.letters:
     file_name = f"{normalize(selected_letter.get('type'))}_{normalize(selected_letter.get('season', []))}_{normalize(selected_letter.get('style'))}_{selected_letter_index + 1}.txt"
 
     st.download_button("📄 Download Selected Letter", selected_letter["letter"], file_name=file_name)
+
+
+
+# Powered BY + LOGO
+
+logo_base64 = get_base64_of_image("ccs_images/logo2.png")
+
+footer_html = f"""
+<style>
+.footer-container {{
+    text-align: center;
+    margin-top: 3rem;
+    color: #555;
+    font-size: 0.9rem;
+}}
+
+.footer-logo {{
+    margin-top: 0.5rem;
+}}
+
+.footer-logo img {{
+    width: 100px;
+    border-radius: 2px;
+    box-shadow: 0 0 0px rgba(0,0,0,0);
+}}
+</style>
+
+<div class="footer-container">
+    &copy; {2025} Powered by <strong>CCS Fundraising</strong>
+    <div class="footer-logo">
+        <img src="data:image/jpg;base64,{logo_base64}" alt="Logo">
+    </div>
+</div>
+"""
+
+st.markdown(footer_html, unsafe_allow_html=True)
+
