@@ -137,7 +137,7 @@ letter_prompt_template = PromptTemplate(
 #             "Summer brings the zoo to life with longer days, lively animal activity, and joyful visits from families and children" if summer else "",
 #             "Spring awakens the zoo with blooming gardens, playful newborn animals, and a renewed sense of energy throughout the park" if spring else "",
 #             "Fall transforms the zoo with crisp air, colorful foliage, and animals preparing for the changing season." if fall else "",
-#             "Winter brings a quiet beauty to the zoo, with peaceful landscapes and animals adapting to the colder months in unique and fascinating ways."
+#             "Winter brings a quiet beauty to the zoo, with peaceful landscapes and animals adapting to the colder months in unique and fascinating ways." if winter else ""
 #         ]).strip() or "No additional information."
 #     }
 
@@ -325,7 +325,7 @@ in_honor_of_gift = st.sidebar.checkbox("Specify in-honor-of gift")
 in_kind_gift = st.sidebar.checkbox("Specify in-kind gift")
 in_pledge = st.sidebar.checkbox("Specify pledge")
 
-st.sidebar.subheader("Step 5: Select Season")
+st.sidebar.subheader("Step 5: Select Season (optional)")
 spring = st.sidebar.checkbox("Spring")
 summer = st.sidebar.checkbox("Summer")
 fall = st.sidebar.checkbox("Fall")
